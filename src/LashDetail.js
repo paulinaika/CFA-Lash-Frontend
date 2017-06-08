@@ -32,7 +32,7 @@ class LashDetail extends Component {
   }
 
   updateQuantity() {
-    const URL_UPDATE = `https://fave-lash.herokuapp.com/api/${this.props.match.params.id}?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpbmFAZ21haWwuY29tIiwiaWF0IjoxNDk2NzQ0MTEyfQ.H6BMLWx7oFL7s0IUZXgqWDGjTYAICcf3Sdn5frEYMos`;
+    const URL_UPDATE = `https://fave-lash.herokuapp.com/api/${this.props.match.params.id}/transaction?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpbmFAZ21haWwuY29tIiwiaWF0IjoxNDk2NzQ0MTEyfQ.H6BMLWx7oFL7s0IUZXgqWDGjTYAICcf3Sdn5frEYMos`;
     let quantity = Math.abs(this.state.orderQuantity);
     if (this.state.orderType === 'remove') {
       quantity = -(this.state.orderQuantity)
@@ -40,15 +40,17 @@ class LashDetail extends Component {
       quantity = this.state.orderQuantity
     };
     console.log(quantity);
-    // axios.post(URL_UPDATE, {
-    //   orderQuantity: quantity,
-    // })
-    // .then(function (response) {
-    //   console.log(response);
-    // })
-    // .catch(function (error) {
-    //   console.log(error);
-    // });
+    axios.post(URL_UPDATE, {
+      quantity: quantity,
+    })
+    .then((response) => {
+      console.log('api res', response);
+      this.getLash();
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
   }
 
   handleOrderChange(e) {
@@ -78,7 +80,7 @@ class LashDetail extends Component {
              Remove
            </Button>
         </ButtonGroup>
-        <p><input type="number" onChange={(e) => this.handleOrderChange(e)} /></p>
+        <p><input value={this.state.orderQuantity} type="number" onChange={(e) => this.handleOrderChange(e)} /></p>
         <p>Total Price: ${this.state.orderQuantity * this.state.product.price}</p>
         <Button onClick={() => this.updateQuantity()}>Submit</Button>
       </div>

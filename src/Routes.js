@@ -10,9 +10,7 @@ import LashDetail from './LashDetail';
 const Routes = () => (
   <Router>
     <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-      </ul>
+        <Link to="/">Home</Link>
 
       <hr/>
         <Route exact path="/" component={App}/>

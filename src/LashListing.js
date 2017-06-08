@@ -11,6 +11,7 @@ const LashListing = (props) => {
       <p>${props.listing.price}</p> */}
 
       <Table striped bordered>
+
         <thead>
           <tr>
             <th>Image</th>
@@ -22,7 +23,7 @@ const LashListing = (props) => {
         </thead>
         <tbody>
           <tr>
-            <td><img src={props.listing.image} height="80" width="80" className="img-responsive"/></td>
+            <td><img src={props.listing.image} alt="lash_image" height="80" width="80" className="img-responsive"/></td>
             <td><Link to={`/listings/${props.listing._id}`}>{props.listing.name}</Link></td>
             <td>{props.listing.quantity}</td>
             <td>{props.listing.price}</td>
