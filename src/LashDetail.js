@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button, ButtonGroup, Well } from 'react-bootstrap';
 
 class LashDetail extends Component {
   constructor(props) {
@@ -63,6 +63,7 @@ class LashDetail extends Component {
   render() {
     return (
       <div>
+      <Well>
         <p>Name: {this.state.product.name}</p>
         <p>Price: ${this.state.product.price}</p>
         <p>Quantity: {this.state.product.quantity}</p>
@@ -83,6 +84,7 @@ class LashDetail extends Component {
         <p><input value={this.state.orderQuantity} type="number" onChange={(e) => this.handleOrderChange(e)} /></p>
         <p>Total Price: ${this.state.orderQuantity * this.state.product.price}</p>
         <Button onClick={() => this.updateQuantity()}>Submit</Button>
+      </Well>
       </div>
 
     )
