@@ -17,7 +17,7 @@ const LashListing = (props) => {
             <th>Name</th>
             <th>Quantity</th>
             <th>Price</th>
-            <th>status</th>
+            <th>Status</th>
           </tr>
         </thead>
 
