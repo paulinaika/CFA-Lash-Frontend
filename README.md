@@ -1,7 +1,8 @@
 # CFA Project 3
 
-[Front-End](https://github.com/paulinaika/CFA-Lash-Frontend)
-[Back-End](https://github.com/paulinaika/CFA-Lash-Backend)
+This project is split into two parts:
+* [Front-End](https://github.com/paulinaika/CFA-Lash-Frontend)
+* [Back-End](https://github.com/paulinaika/CFA-Lash-Backend)
 
 # About
 
