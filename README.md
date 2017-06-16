@@ -4,6 +4,18 @@ This project is split into two parts:
 * [Front-End](https://github.com/paulinaika/CFA-Lash-Frontend)
 * [Back-End](https://github.com/paulinaika/CFA-Lash-Backend)
 
+
+# Content
+- [About](https://github.com/paulinaika/CFA-Lash-Frontend#about)
+    - [Problems](https://github.com/paulinaika/CFA-Lash-Frontend#problems)
+    - [Project focus](https://github.com/paulinaika/CFA-Lash-Frontend#project-focus)
+- [Thinking Process](https://github.com/paulinaika/CFA-Lash-Frontend#thinking-process)
+- [Design decisions](https://github.com/paulinaika/CFA-Lash-Frontend#design-decisions)
+    - [Backend](https://github.com/paulinaika/CFA-Lash-Frontend#backend)
+    - [Frontend](https://github.com/paulinaika/CFA-Lash-Frontend#frontend)
+- [Future Implementations](https://github.com/paulinaika/CFA-Lash-Frontend#future-implementations)
+
+
 # About
 
 This project is designed for Fave-Lashes in order to manage their inventory stock count.
@@ -46,3 +58,10 @@ I have brainstormed the idea and possible problems of this project through [Trel
 <img src="http://res.cloudinary.com/dcbeoroxh/image/upload/v1496953791/Lashes/Screen_Shot_2017-06-09_at_6.28.40_am.png" width="475" />
 <img src="http://res.cloudinary.com/dcbeoroxh/image/upload/v1496953791/Lashes/Screen_Shot_2017-06-09_at_6.28.47_am.png" width="475" />
 </p>
+
+# Future Implementations
+As this is a work in progress project, I would like to implement the following for furture improvements:
+1. To build a customer and transaction database.
+2. To be able to list out the most purchased products so that my client would be able to study the preferred types of lashes purchased.
+3. To be able to list out the past purchases of each customers in order to give personalised service to their customers.
+4. To have a sales and profit and loss overview on the dashboard.
