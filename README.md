@@ -1,5 +1,8 @@
 # CFA Project 3
 
+[Front-End](https://github.com/paulinaika/CFA-Lash-Frontend)
+[Back-End](https://github.com/paulinaika/CFA-Lash-Backend)
+
 # About
 
 This project is designed for Fave-Lashes in order to manage their inventory stock count.
